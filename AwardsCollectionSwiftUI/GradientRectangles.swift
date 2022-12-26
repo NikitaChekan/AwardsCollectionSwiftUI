@@ -2,7 +2,7 @@
 //  GradientRectangles.swift
 //  AwardsCollectionSwiftUI
 //
-//  Created by jopootrivatel on 25.12.2022.
+//  Created by Nikita Chekan on 25.12.2022.
 //
 
 import SwiftUI
