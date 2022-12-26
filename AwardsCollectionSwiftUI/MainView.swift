@@ -21,8 +21,8 @@ struct MainView: View {
             }
             Spacer()
             if awardIsShowing {
-                GradientRectangles()
-                    .frame(width: 250, height: 250)
+                MyFirstPicView()
+                    .frame(width: 300, height: 300)
                     .offset(x: awardIsShowing ? 0 : -UIScreen.main.bounds.width)
                     .transition(.leadingSlide)
             }
