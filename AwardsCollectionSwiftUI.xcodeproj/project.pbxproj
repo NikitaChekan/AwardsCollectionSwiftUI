@@ -16,6 +16,7 @@
 		DA3D3EB32958C285002A6A76 /* PathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3D3EB22958C285002A6A76 /* PathView.swift */; };
 		DA3D3EB52958C71E002A6A76 /* CurvesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3D3EB42958C71E002A6A76 /* CurvesView.swift */; };
 		DA3D3EB72958CB96002A6A76 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3D3EB62958CB96002A6A76 /* MainView.swift */; };
+		DA902F132959CEC00001A54E /* CartRacingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA902F122959CEC00001A54E /* CartRacingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		DA3D3EB22958C285002A6A76 /* PathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathView.swift; sourceTree = "<group>"; };
 		DA3D3EB42958C71E002A6A76 /* CurvesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvesView.swift; sourceTree = "<group>"; };
 		DA3D3EB62958CB96002A6A76 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		DA902F122959CEC00001A54E /* CartRacingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRacingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				DA3D3EA22958BEBA002A6A76 /* ContentView.swift */,
 				DA3D3EB62958CB96002A6A76 /* MainView.swift */,
 				DA3D3EB02958C0D1002A6A76 /* AwardsView.swift */,
+				DA902F122959CEC00001A54E /* CartRacingView.swift */,
 				DA3D3EAE2958BEE0002A6A76 /* GradientRectangles.swift */,
 				DA3D3EB22958C285002A6A76 /* PathView.swift */,
 				DA3D3EB42958C71E002A6A76 /* CurvesView.swift */,
@@ -152,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA902F132959CEC00001A54E /* CartRacingView.swift in Sources */,
 				DA3D3EB52958C71E002A6A76 /* CurvesView.swift in Sources */,
 				DA3D3EB72958CB96002A6A76 /* MainView.swift in Sources */,
 				DA3D3EB32958C285002A6A76 /* PathView.swift in Sources */,
