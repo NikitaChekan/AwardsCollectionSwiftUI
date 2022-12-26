@@ -13,24 +13,24 @@ struct CartRacingView: View {
     
     var body: some View {
         HStack {
-            VStack {
+            VStack(spacing: 16) {
                 CartView(
                     start: start,
                     title: "Default",
                     color: .red,
-                    animation: .default
+                    animation: .default.delay(0.5)
                 )
                 CartView(
                     start: start,
                     title: "EaseOut",
                     color: .green,
-                    animation: .easeOut
+                    animation: .easeOut.speed(0.2)
                 )
                 CartView(
                     start: start,
                     title: "EaseIn",
                     color: .yellow,
-                    animation: .easeIn(duration: 0.7)
+                    animation: .easeIn(duration: 0.5)
                 )
                 CartView(
                     start: start,
@@ -60,7 +60,7 @@ struct CartRacingView: View {
                     ).speed(0.5)
                 )
             }
-            
+            .padding()
             Spacer()
         }
         .onTapGesture {
@@ -72,7 +72,7 @@ struct CartRacingView: View {
 struct CartRacingView_Previews: PreviewProvider {
     static var previews: some View {
         CartRacingView()
-            .previewInterfaceOrientation(.landscapeLeft)
+//            .previewInterfaceOrientation(.landscapeLeft)
     }
 }
 
