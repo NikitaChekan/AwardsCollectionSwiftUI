@@ -30,13 +30,13 @@ struct CartRacingView: View {
                     start: start,
                     title: "EaseIn",
                     color: .yellow,
-                    animation: .easeIn
+                    animation: .easeIn(duration: 0.7)
                 )
                 CartView(
                     start: start,
                     title: "EaseInOut",
                     color: .blue,
-                    animation: .easeInOut
+                    animation: .easeInOut(duration: 0.7).repeatCount(3, autoreverses: true)
                 )
                 CartView(
                     start: start,
@@ -53,12 +53,11 @@ struct CartRacingView: View {
                     start: start,
                     title: "Spring",
                     color: .brown,
-                    animation: .interpolatingSpring(
-                        mass: 1, /// Отвечает за массу объекта
-                        stiffness: 100, /// Отвечает за жесткость пружины (скорость падения)
-                        damping: 10, /// Затухание влияет на скорость остановки анимации
-                        initialVelocity: 0 /// Начальное ускорение
-                    )
+                    animation: .spring(
+                        response: 0.55, /// Влияет на продолжительность одного колебания
+                        dampingFraction: 0.45, /// Контролирует упругость
+                        blendDuration: 0 /// Влияет на скорость пружины
+                    ).speed(0.5)
                 )
             }
             

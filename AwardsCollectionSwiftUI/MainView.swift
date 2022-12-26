@@ -12,23 +12,42 @@ struct MainView: View {
     
     var body: some View {
         VStack {
-            Button(action: { awardIsShowing.toggle() }) {
+            Button(action: buttonAction) {
                 Text(awardIsShowing ? "Hide Award" : "Show Award")
                 Spacer()
                 Image(systemName: "chevron.up.square")
                     .scaleEffect(awardIsShowing ? 2 : 1)
                     .rotationEffect(.degrees (awardIsShowing ? 0 : 180))
-                    .animation(.default, value: awardIsShowing)
             }
             Spacer()
-            
-            GradientRectangles()
-                .frame(width: 250, height: 250)
+            if awardIsShowing {
+                GradientRectangles()
+                    .frame(width: 250, height: 250)
+                    .offset(x: awardIsShowing ? 0 : -UIScreen.main.bounds.width)
+                    .transition(.leadingSlide)
+            }
             
             Spacer()
         }
         .font(.headline)
         .padding()
+    }
+    
+    private func buttonAction() {
+        withAnimation {
+            awardIsShowing.toggle()
+        }
+    }
+}
+
+extension AnyTransition {
+    static var leadingSlide: AnyTransition {
+        let insertion = AnyTransition.move(edge: .leading)
+            .combined(with: .scale)
+        let removal = AnyTransition.scale
+            .combined(with: .opacity)
+        
+        return .asymmetric(insertion: insertion, removal: removal)
     }
 }
 
