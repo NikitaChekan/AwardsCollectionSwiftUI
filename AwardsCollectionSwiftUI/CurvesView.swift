@@ -74,7 +74,7 @@ struct CurvesView: View {
                     endAngle: .degrees(270),
                     clockwise: true
                 )
-                path.closeSubpath()
+                path.closeSubpath() /// Модификатор для закрытия перемычки
             }
             .stroke(Color.orange, lineWidth: 2)
         }
