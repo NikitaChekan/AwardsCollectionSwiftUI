@@ -25,15 +25,15 @@ struct MyFirstPicView: View {
                         path.addLine(to: CGPoint(x: middle, y: farLine))
                         path.addLine(to: CGPoint(x: middle - (farLine - nearLine), y: nearLine / 10))
                     }
-//                    .fill(Color(red: 0.4, green: 0.4, blue: 0.4))
                     .fill(
                         LinearGradient(
                             colors: [.pink, .blue],
-                            startPoint: UnitPoint(x: 1, y: 0),
+                            startPoint: UnitPoint(x: 1, y: 1),
                             endPoint: UnitPoint(x: 0, y: 1)
                         )
                     )
                     .rotationEffect(.degrees(Double(iteration) * 60))
+                    .shadow(color: .blue.opacity(0.4), radius: 15)
                 }
             }
         }
@@ -56,10 +56,5 @@ struct MyFirstPic_Previews: PreviewProvider {
 // Сюрикен
 //path.move(to: CGPoint(x: middle, y: middle - 50))
 //path.addLine(to: CGPoint(x: middle + 50, y: farLine - 15))
-//path.addLine(to: CGPoint(x: middle, y: middle - 15))
-//path.addLine(to: CGPoint(x: middle - 35, y: nearLine - 15))
-
-//path.move(to: CGPoint(x: middle, y: middle - 50))
-//path.addLine(to: CGPoint(x: middle + 50, y: farLine - 155))
 //path.addLine(to: CGPoint(x: middle, y: middle - 15))
 //path.addLine(to: CGPoint(x: middle - 35, y: nearLine - 15))
