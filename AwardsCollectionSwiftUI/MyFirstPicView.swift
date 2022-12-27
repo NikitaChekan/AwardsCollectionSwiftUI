@@ -13,17 +13,17 @@ struct MyFirstPicView: View {
             let width = geometry.size.width
             let height = geometry.size.height
             let size = min(width, height)
-            let middle = size/2
-            let farLine = size * 0.9 /// дальняя линия
-            let nearLine = size * 0.1 /// ближняя линия
+            let middle = size / 2
+            let farLine = size * 0.425 /// дальняя линия 85
+            let nearLine = size * 0.25 /// ближняя линия 50
             
             ZStack {
                 ForEach(0..<6) { iteration in
                     Path { path in
-                        path.move(to: CGPoint(x: middle, y: middle - 50))
-                        path.addLine(to: CGPoint(x: middle + 50, y: farLine - 155))
-                        path.addLine(to: CGPoint(x: middle, y: middle - 15))
-                        path.addLine(to: CGPoint(x: middle - 35, y: nearLine - 15))
+                        path.move(to: CGPoint(x: middle, y: nearLine))
+                        path.addLine(to: CGPoint(x: middle + nearLine, y: nearLine / 2))
+                        path.addLine(to: CGPoint(x: middle, y: farLine))
+                        path.addLine(to: CGPoint(x: middle - (farLine - nearLine), y: nearLine / 10))
                     }
 //                    .fill(Color(red: 0.4, green: 0.4, blue: 0.4))
                     .fill(
@@ -56,5 +56,10 @@ struct MyFirstPic_Previews: PreviewProvider {
 // Сюрикен
 //path.move(to: CGPoint(x: middle, y: middle - 50))
 //path.addLine(to: CGPoint(x: middle + 50, y: farLine - 15))
+//path.addLine(to: CGPoint(x: middle, y: middle - 15))
+//path.addLine(to: CGPoint(x: middle - 35, y: nearLine - 15))
+
+//path.move(to: CGPoint(x: middle, y: middle - 50))
+//path.addLine(to: CGPoint(x: middle + 50, y: farLine - 155))
 //path.addLine(to: CGPoint(x: middle, y: middle - 15))
 //path.addLine(to: CGPoint(x: middle - 35, y: nearLine - 15))
