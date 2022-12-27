@@ -15,9 +15,10 @@ struct MainView: View {
             Button(action: buttonAction) {
                 Text(awardIsShowing ? "Hide Award" : "Show Award")
                 Spacer()
-                Image(systemName: "chevron.up.square")
-                    .scaleEffect(awardIsShowing ? 2 : 1)
-                    .rotationEffect(.degrees (awardIsShowing ? 0 : 180))
+                Image(systemName: "chevron.right.circle")
+                    .imageScale(.large)
+                    .scaleEffect(awardIsShowing ? 1.5 : 1)
+                    .rotationEffect(.degrees (awardIsShowing ? 90 : 0))
             }
             Spacer()
             if awardIsShowing {
@@ -42,8 +43,8 @@ struct MainView: View {
 
 extension AnyTransition {
     static var leadingSlide: AnyTransition {
-        let insertion = AnyTransition.move(edge: .leading)
-            .combined(with: .scale)
+        let insertion = AnyTransition.move(edge: .trailing)
+            .combined(with: .opacity)
         let removal = AnyTransition.scale
             .combined(with: .opacity)
         

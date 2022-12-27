@@ -33,7 +33,7 @@ struct MyFirstPicView: View {
                         )
                     )
                     .rotationEffect(.degrees(Double(iteration) * 60))
-                    .shadow(color: .blue.opacity(0.4), radius: 15)
+                    .shadow(color: .purple.opacity(0.5), radius: 15)
                 }
             }
         }
