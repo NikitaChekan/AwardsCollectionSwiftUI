@@ -12,7 +12,7 @@ struct AwardsView: View {
         NavigationStack {
             VStack {
                 ScrollView {
-                    MyFirstPicView()
+                    GradientStar()
                         .frame(width: 200, height: 200)
                     GradientRectangles()
                         .frame(width: 200, height: 200)

@@ -16,7 +16,7 @@
 		DA3D3EB32958C285002A6A76 /* PathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3D3EB22958C285002A6A76 /* PathView.swift */; };
 		DA3D3EB52958C71E002A6A76 /* CurvesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3D3EB42958C71E002A6A76 /* CurvesView.swift */; };
 		DA3D3EB72958CB96002A6A76 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3D3EB62958CB96002A6A76 /* MainView.swift */; };
-		DA4EB9C6295A1D0E000462F0 /* MyFirstPicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4EB9C5295A1D0E000462F0 /* MyFirstPicView.swift */; };
+		DA4EB9C6295A1D0E000462F0 /* GradientStar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4EB9C5295A1D0E000462F0 /* GradientStar.swift */; };
 		DA902F132959CEC00001A54E /* CartRacingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA902F122959CEC00001A54E /* CartRacingView.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +31,7 @@
 		DA3D3EB22958C285002A6A76 /* PathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathView.swift; sourceTree = "<group>"; };
 		DA3D3EB42958C71E002A6A76 /* CurvesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvesView.swift; sourceTree = "<group>"; };
 		DA3D3EB62958CB96002A6A76 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		DA4EB9C5295A1D0E000462F0 /* MyFirstPicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstPicView.swift; sourceTree = "<group>"; };
+		DA4EB9C5295A1D0E000462F0 /* GradientStar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientStar.swift; sourceTree = "<group>"; };
 		DA902F122959CEC00001A54E /* CartRacingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRacingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,7 +73,7 @@
 				DA3D3EAE2958BEE0002A6A76 /* GradientRectangles.swift */,
 				DA3D3EB22958C285002A6A76 /* PathView.swift */,
 				DA3D3EB42958C71E002A6A76 /* CurvesView.swift */,
-				DA4EB9C5295A1D0E000462F0 /* MyFirstPicView.swift */,
+				DA4EB9C5295A1D0E000462F0 /* GradientStar.swift */,
 				DA3D3EA42958BEBB002A6A76 /* Assets.xcassets */,
 				DA3D3EA62958BEBB002A6A76 /* Preview Content */,
 			);
@@ -160,7 +160,7 @@
 			files = (
 				DA902F132959CEC00001A54E /* CartRacingView.swift in Sources */,
 				DA3D3EB52958C71E002A6A76 /* CurvesView.swift in Sources */,
-				DA4EB9C6295A1D0E000462F0 /* MyFirstPicView.swift in Sources */,
+				DA4EB9C6295A1D0E000462F0 /* GradientStar.swift in Sources */,
 				DA3D3EB72958CB96002A6A76 /* MainView.swift in Sources */,
 				DA3D3EB32958C285002A6A76 /* PathView.swift in Sources */,
 				DA3D3EB12958C0D1002A6A76 /* AwardsView.swift in Sources */,

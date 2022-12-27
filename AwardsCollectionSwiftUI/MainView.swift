@@ -22,7 +22,7 @@ struct MainView: View {
             }
             Spacer()
             if awardIsShowing {
-                MyFirstPicView()
+                GradientStar()
                     .frame(width: 300, height: 300)
                     .offset(x: awardIsShowing ? 0 : -UIScreen.main.bounds.width)
                     .transition(.leadingSlide)
