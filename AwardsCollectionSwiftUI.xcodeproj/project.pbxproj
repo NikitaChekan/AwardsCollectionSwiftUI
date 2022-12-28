@@ -17,6 +17,8 @@
 		DA3D3EB52958C71E002A6A76 /* CurvesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3D3EB42958C71E002A6A76 /* CurvesView.swift */; };
 		DA3D3EB72958CB96002A6A76 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3D3EB62958CB96002A6A76 /* MainView.swift */; };
 		DA4EB9C6295A1D0E000462F0 /* GradientStar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4EB9C5295A1D0E000462F0 /* GradientStar.swift */; };
+		DA8972A0295CB1FC001C7A92 /* CustomGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89729F295CB1FC001C7A92 /* CustomGridView.swift */; };
+		DA8972A3295CBA06001C7A92 /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8972A2295CBA06001C7A92 /* Award.swift */; };
 		DA902F132959CEC00001A54E /* CartRacingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA902F122959CEC00001A54E /* CartRacingView.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,8 @@
 		DA3D3EB42958C71E002A6A76 /* CurvesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvesView.swift; sourceTree = "<group>"; };
 		DA3D3EB62958CB96002A6A76 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		DA4EB9C5295A1D0E000462F0 /* GradientStar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientStar.swift; sourceTree = "<group>"; };
+		DA89729F295CB1FC001C7A92 /* CustomGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGridView.swift; sourceTree = "<group>"; };
+		DA8972A2295CBA06001C7A92 /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
 		DA902F122959CEC00001A54E /* CartRacingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRacingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,8 +78,10 @@
 				DA3D3EB22958C285002A6A76 /* PathView.swift */,
 				DA3D3EB42958C71E002A6A76 /* CurvesView.swift */,
 				DA4EB9C5295A1D0E000462F0 /* GradientStar.swift */,
+				DA8972A1295CB20D001C7A92 /* Grids */,
 				DA3D3EA42958BEBB002A6A76 /* Assets.xcassets */,
 				DA3D3EA62958BEBB002A6A76 /* Preview Content */,
+				DA8972A2295CBA06001C7A92 /* Award.swift */,
 			);
 			path = AwardsCollectionSwiftUI;
 			sourceTree = "<group>";
@@ -86,6 +92,14 @@
 				DA3D3EA72958BEBB002A6A76 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DA8972A1295CB20D001C7A92 /* Grids */ = {
+			isa = PBXGroup;
+			children = (
+				DA89729F295CB1FC001C7A92 /* CustomGridView.swift */,
+			);
+			path = Grids;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,12 +175,14 @@
 				DA902F132959CEC00001A54E /* CartRacingView.swift in Sources */,
 				DA3D3EB52958C71E002A6A76 /* CurvesView.swift in Sources */,
 				DA4EB9C6295A1D0E000462F0 /* GradientStar.swift in Sources */,
+				DA8972A3295CBA06001C7A92 /* Award.swift in Sources */,
 				DA3D3EB72958CB96002A6A76 /* MainView.swift in Sources */,
 				DA3D3EB32958C285002A6A76 /* PathView.swift in Sources */,
 				DA3D3EB12958C0D1002A6A76 /* AwardsView.swift in Sources */,
 				DA3D3EA32958BEBA002A6A76 /* ContentView.swift in Sources */,
 				DA3D3EA12958BEBA002A6A76 /* AwardsCollectionSwiftUIApp.swift in Sources */,
 				DA3D3EAF2958BEE0002A6A76 /* GradientRectangles.swift in Sources */,
+				DA8972A0295CB1FC001C7A92 /* CustomGridView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

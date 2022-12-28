@@ -8,21 +8,17 @@
 import SwiftUI
 
 struct AwardsView: View {
+    private let awards = Award.getAwards().filter { $0.awarded }
+    
     var body: some View {
         NavigationStack {
-            VStack {
-                ScrollView {
-                    GradientStar()
-                        .frame(width: 200, height: 200)
-                    GradientRectangles()
-                        .frame(width: 200, height: 200)
-                    PathView()
-                        .frame(width: 200, height: 200)
-                    CurvesView()
-                        .frame(width: 200, height: 200)
+            CustomGridView(items: awards, columns: 2) { award in
+                VStack {
+                    award.awardView
+                    Text(award.title)
                 }
             }
-            .navigationTitle("Awards")
+            .navigationTitle("Your awards: \(awards.count)")
         }
     }
 }
